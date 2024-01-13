@@ -16,7 +16,7 @@
         <form onsubmit="return false;">
             <label>Enter your name</label>
             <input type="text" id="name"/>
-            <input type="submit" onclick="sayHello();"/><br>
+            <br>
             <label >Gender</label>
             <input type="radio" name="gender" value="male">
             <label for="male">Male</label>
@@ -24,10 +24,17 @@
             <label for="female">Female</label><br>
             <label for="birthday">Date of birth:</label>
             <input type="date" id="birthday" name="birthday"/><br>
-            <input type="submit" onclick="Date();"/><br>
+            <br>
+            <label>Enter your school</label>
+            <select>
+                <option value="select">Select</option>
+                <option value="united">United Academy</option>
+                <option value="stxavier">St.Xavier</option>
+                <option value="everest">Everest</option>
+            </select><br><br>
             <label>Upload your resume</label>
             <input type="file" id="myFile" name="filename"><br>
-            <input type="submit" onclick="File();"/>
+            <input type="submit" onclick="sayHello();"/>
         </form>
         <script src="index.js"></script>
     </body>
