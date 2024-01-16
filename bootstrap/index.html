@@ -31,6 +31,7 @@
               <label class="form-label">Password</label>
               <input
                 type="password"
+                id ="pwd"
                 class="form-control"
                 placeholder="Password"
               />
@@ -39,7 +40,7 @@
           <div class="row mb-3">
             <div class="col">
               <label class="form-label">Select your college ?</label>
-              <select class="form-select">
+              <select class="form-select" id="colz">
                 <option value="stxavier">St Xavier College</option>
                 <option value="united">United Academy</option>
                 <option value="everest">Everest Engineering College</option>
@@ -49,6 +50,7 @@
               <label class="form-label">Email</label>
               <input
                 type="email"
+                id ="mail"
                 class="form-control"
                 placeholder="Enter your Email"
               />
@@ -65,6 +67,9 @@
         <div class="col">
         <div class="row">The result is:</div>
         <div class="row" id="result">$(Answer)</div>
+        <div class="row" id="resultpwd">$(Answer)</div>
+        <div class="row" id="resultcolz">$(Answer)</div>
+        <div class="row" id="resultmail">$(Answer)</div>
       </div>
       <div class="col">
         <div class="row">The current time is:</div>
