@@ -67,3 +67,18 @@ const getTime = () => {
 setInterval(() => {
   getTime();
 }, 1000);
+
+
+// Write a js function that returns boolean based on the role check in the array
+
+// userRole = ["admin", "vendor"] // currentUser
+//allowedRole = ['inventoryManager','vendor'] Who can it
+//==> true
+
+const checkRole = (userRole,allowedRole) => {
+  return userRole.some((role) => allowedRole.includes(role))
+};
+const userRole =["admin","vendor"];
+const allowedRole =["inventoryManager","vendor"];
+const hasRole = checkRole (userRole,allowedRole);
+console.log(hasRole);
